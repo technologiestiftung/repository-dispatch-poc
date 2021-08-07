@@ -1,6 +1,6 @@
 
 
-POST https://api.github.com/repos/ff6347/repository-dispatch-poc/dispatches
+POST https://api.github.com/repos/technologiestiftung/repository-dispatch-poc/dispatches
 Authorization: Bearer {{$dotenv %TOKEN}}
 Content-Type: application/json
 
