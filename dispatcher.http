@@ -1,0 +1,7 @@
+
+
+POST https://api.github.com/repos/ff6347/repository-dispatch-poc/dispatches
+Authorization: Bearer {{$dotenv %TOKEN}}
+Content-Type: application/json
+
+{"event_type":"foo", "client_payload":{"source":"from vscode"}}
