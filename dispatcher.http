@@ -1,7 +1,9 @@
 
-
+@token = {{$processEnv GH_TOKEN}}
 POST https://api.github.com/repos/technologiestiftung/repository-dispatch-poc/dispatches
-Authorization: Bearer {{$dotenv %TOKEN}}
+Authorization: Bearer {{token}}
+X-GitHub-Api-Version: 2022-11-28
 Content-Type: application/json
+Accept: application/vnd.github+json
 
-{"event_type":"foo", "client_payload":{"source":"from vscode"}}
+{"event_type":"foo", "client_payload":{"environment":"test"}}
