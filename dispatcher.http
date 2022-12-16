@@ -6,4 +6,4 @@ X-GitHub-Api-Version: 2022-11-28
 Content-Type: application/json
 Accept: application/vnd.github+json
 
-{"event_type":"foo", "client_payload":{"environment":"test"}}
+{"event_type":"foo", "client_payload":{"environment":"production"}}
